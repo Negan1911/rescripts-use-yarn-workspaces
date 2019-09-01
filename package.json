@@ -1,0 +1,13 @@
+{
+  "name": "rescripts-use-yarn-workspaces",
+  "version": "1.0.0",
+  "description": "Helper to use Yarn Workspaces with CRA",
+  "main": "index.js",
+  "repository": "git@github.com:Negan1911/rescripts-use-yarn-workspaces.git",
+  "author": "Nahuel Veron <nahuelav96@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "find-yarn-workspace-root": "^1.2.1"
+  }
+}
