@@ -5,7 +5,7 @@ it will allow to transpile other code in the same workspace.
 ## How to use
 1. Install the package by running:
 ```sh
-  yarn install -D rescripts-use-yarn-workspaces
+  yarn add -D rescripts-use-yarn-workspaces
 ```
 
 2. [On your rescripts configuration](https://github.com/harrysolovay/rescripts#advanced-usage)
