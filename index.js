@@ -22,7 +22,14 @@ module.exports = config => {
             customize: require.resolve(
               'babel-preset-react-app/webpack-overrides'
             ),
-            presets: [require.resolve('babel-preset-react-app')]
+            presets: [require.resolve('babel-preset-react-app')],
+            plugins: [
+              ["babel-plugin-named-asset-import", {
+                loaderMap: {
+                  svg: { ReactComponent: "@svgr/webpack?-svgo,+ref![path]" }
+                }
+              }]
+          ]
           }
         }
       ]
