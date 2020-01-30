@@ -24,10 +24,7 @@ const extensions = [
 module.exports = config => {
   return {
     ...config,
-    resolve: {
-      ...config.resolve,
-      extensions
-    }
+    resolve: { ...config.resolve, extensions },
     module: {
       ...config.module,
       rules: [
