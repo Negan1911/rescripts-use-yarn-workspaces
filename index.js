@@ -7,9 +7,27 @@ const pgks = spawn.sync('yarn', ['workspaces', 'info', '--json'])
 const output = JSON.parse(pgks.output[1].toString())
 const packages = JSON.parse(output.data)
 
+const extensions = [
+  'web.mjs',
+  'mjs',
+  'web.js',
+  'js',
+  'web.ts',
+  'ts',
+  'web.tsx',
+  'tsx',
+  'json',
+  'web.jsx',
+  'jsx',
+];
+
 module.exports = config => {
   return {
     ...config,
+    resolve: {
+      ...config.resolve,
+      extensions
+    }
     module: {
       ...config.module,
       rules: [
