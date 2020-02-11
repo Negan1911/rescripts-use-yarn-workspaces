@@ -1,4 +1,4 @@
-# Use Yarn Workspaces
+# Use Yarn Workspaces (Rescripts Plugin)
 This plugin will allow to use CRA inside a Yarn Workspace configuration,
 it will allow to transpile other code in the same workspace.
 
@@ -17,3 +17,13 @@ it will allow to transpile other code in the same workspace.
 ```
 
 3. Run your app, external code should be transpiled.
+
+# Storybook Plugin.
+Additionally, this could export helpers for storybook, to use it, on `.storybook/main.js` add the following:
+```diff
+module.exports = {
+  addons: [
++   'rescripts-use-yarn-workspaces/storybook'
+  ]
+}
+```
