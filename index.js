@@ -3,7 +3,7 @@ const path = require('path')
 const spawn = require('cross-spawn')
 const root = require('find-yarn-workspace-root')()
 
-const pgks = spawn.sync('yarn', ['workspaces', 'info', '--json'])
+const pgks = spawn.sync('yarn', ['--json', 'workspaces', 'info'])
 const output = JSON.parse(pgks.output[1].toString())
 const packages = JSON.parse(output.data)
 
