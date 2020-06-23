@@ -24,6 +24,7 @@ const ext = [
   'json',
   'web.jsx',
   'jsx',
+  'mdx'
 ];
 
 // common function to get style loaders
