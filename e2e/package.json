@@ -1,0 +1,11 @@
+{
+  "name": "rescripts-use-yarn-workspaces-e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": ["e2e-test/jest"]
+  }
+}

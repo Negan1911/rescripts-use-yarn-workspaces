@@ -1,0 +1,17 @@
+{
+  "name": "e2e-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "jest": "^26.1.0",
+    "puppeteer": "^4.0.1"
+  }
+}

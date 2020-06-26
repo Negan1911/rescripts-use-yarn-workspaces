@@ -6,6 +6,10 @@
   "repository": "git@github.com:Negan1911/rescripts-use-yarn-workspaces.git",
   "author": "Nahuel Veron <nahuelav96@gmail.com>",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "storybook/index.js"
+  ],
   "dependencies": {
     "cross-spawn": "^6.0.5",
     "find-yarn-workspace-root": "^1.2.1",

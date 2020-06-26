@@ -1,0 +1,30 @@
+name: Tests
+on:
+  - pull_request
+  - push
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies (project)
+        run: yarn
+
+      - name: publish local version
+        run: npx yalc publish
+
+      - name: use published version
+        run: (cd e2e/packages/e2e-app && npx yalc add rescripts-use-yarn-workspaces)
+
+      - name: Install dependencies (e2e)
+        run: (cd e2e && yarn)
+
+      - name: Test
+        run: (cd e2e/packages/e2e-test && yarn test)
