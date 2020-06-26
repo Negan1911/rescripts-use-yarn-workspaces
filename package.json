@@ -8,7 +8,8 @@
   "license": "MIT",
   "dependencies": {
     "cross-spawn": "^6.0.5",
-    "find-yarn-workspace-root": "^1.2.1"
+    "find-yarn-workspace-root": "^1.2.1",
+    "@rescripts/utilities": "^0.0.7"
   },
   "peerDependencies": {
     "react-scripts": "*"
