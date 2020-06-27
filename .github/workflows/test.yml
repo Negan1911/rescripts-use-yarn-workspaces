@@ -9,6 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install chromium prerequisites
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install libgbm-dev
+
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
