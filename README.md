@@ -1,3 +1,5 @@
+### This plugin is not maintained anymore! Sorry!
+
 # Use Yarn Workspaces (Rescripts Plugin)
 This plugin will allow to use CRA inside a Yarn Workspace configuration,
 it will allow to transpile other code in the same workspace.
